@@ -143,6 +143,7 @@ jobs:
         run: make test_universal_xcframework
   Linux:
     timeout-minutes: 60
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - run: swift test
